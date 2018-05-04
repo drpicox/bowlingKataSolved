@@ -19,4 +19,14 @@ public class BowlingGameTest {
         assertThat(g.score(), is(0));
     }
 
+    @Test
+    public void testAllOnes() throws Exception {
+        Game g = new Game();
+        for (int i = 0; i < 20; i++)
+            g.roll(1);
+
+        assertThat(g.score(), is(20));
+    }
+
+
 }
