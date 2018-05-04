@@ -37,14 +37,14 @@ public class BowlingGameTest {
         assertThat(g.score(), is(20));
     }
 
-    //@Test
-    //public void oneSpare() {
-    //    g.roll(5);
-    //    g.roll(5); // spare
-    //    g.roll(3);
-    //    rollMany(17,0);
-    //    assertThat(g.score(), is(16));
-    //}
+    @Test
+    public void oneSpare() {
+        g.roll(5);
+        g.roll(5); // spare
+        g.roll(3);
+        rollMany(17,0);
+        assertThat(g.score(), is(16));
+    }
 
 
 
